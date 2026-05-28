@@ -572,11 +572,7 @@ function initBackgroundVideo() {
   bgVideo.setAttribute('muted', '');
   bgVideo.setAttribute('playsinline', '');
 
-  // Detect WebM support to select the most optimal local source
-  const supportsWebm = bgVideo.canPlayType('video/webm; codecs="vp9, vorbis"') !== '' || 
-                       bgVideo.canPlayType('video/webm; codecs="vp8, vorbis"') !== '';
-  
-  const videoSrc = supportsWebm ? 'assets/tech_loop.webm' : 'assets/tech_loop.mp4';
+  const videoSrc = 'assets/tech_loop.mp4';
   
   // Explicitly assign the correct src attribute to prevent browser 404 halt glitches on nested sources
   bgVideo.src = videoSrc;
@@ -587,7 +583,7 @@ function initBackgroundVideo() {
   
   if (playPromise !== undefined) {
     playPromise.then(() => {
-      console.log("BACKGROUND VIDEO PLAYING SUCCESS (" + (supportsWebm ? "WEBM" : "MP4") + ")");
+      console.log("BACKGROUND VIDEO PLAYING SUCCESS (MP4)");
     }).catch((err) => {
       console.warn("BACKGROUND VIDEO PLAY INITIAL BLOCK:", err);
       // Fallback: Trigger play on the first user action on the page
