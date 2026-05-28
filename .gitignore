@@ -1,0 +1,6 @@
+# Ignore large video files exceeding GitHub's 100MB limit
+assets/*.mp4
+
+# OS/System files
+.DS_Store
+Thumbs.db

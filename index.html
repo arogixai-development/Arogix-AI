@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO & Enterprise Indexing Optimization -->
+  <title>Arogix AI | Building AI Systems for Real-World Impact</title>
+  <meta name="description"
+    content="Arogix AI develops scalable, capital-efficient artificial intelligence infrastructure, advanced healthcare reasoning engines, and practical decision support software. Developers of the flagship DermaCare AI suite.">
+  <meta name="keywords"
+    content="Arogix AI, DermaCare AI, Healthcare Intelligence, Scalable AI Infrastructure, Clinical Decision Support, Local GPU Inference, FastAPI, Ollama, Phi-3, Rubem Didini, Ragulpriyan">
+  <meta name="author" content="Arogix AI">
+
+  <!-- Open Graph Corporate Metadata -->
+  <meta property="og:title" content="Arogix AI | Sovereign Enterprise & Healthcare AI Systems">
+  <meta property="og:description"
+    content="Engineering high-performance local inference architectures, clinical companions, and scalable SaaS AI platforms.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:url" content="https://dermacare-ai-inky.vercel.app/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Arogix AI | Clinical Decision Systems">
+  <meta name="twitter:description"
+    content="Bypassing commercial API costs via localized clinical models on custom GPU clusters.">
+  <meta name="twitter:image" content="assets/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- EmailJS Browser SDK Integration -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init({
+        publicKey: "MGSxzFNj3tLaDb-qG"
+      });
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- Minimalist Fading Loader -->
+  <div id="loader-wrapper" aria-hidden="true">
+    <div class="loader-logo-container">
+      <img src="assets/logo.png" alt="Arogix AI Logo" class="loader-logo">
+    </div>
+    <div class="loader-text">AROGIX AI</div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- Background Interactive Particles & Soft Ambient Glows -->
+  <canvas id="neural-canvas"></canvas>
+  <div class="glow-ambient glow-cyan" aria-hidden="true"></div>
+  <div class="glow-ambient glow-purple" aria-hidden="true"></div>
+  <div class="glow-ambient glow-blue" aria-hidden="true"></div>
+
+  <!-- Responsive Corporate Header -->
+  <header id="header">
+    <div class="navbar-container">
+      <a href="#hero" class="nav-brand" id="nav-logo-link">
+        <img src="assets/logo.png" alt="Arogix AI Logo" class="nav-logo">
+      </a>
+
+      <nav aria-label="Main Corporate Navigation">
+        <ul class="nav-links" id="main-navigation-menu">
+          <li><a href="#about" class="active" id="nav-link-about">About</a></li>
+          <li><a href="#founders" id="nav-link-founders">Founders</a></li>
+          <li><a href="#build" id="nav-link-build">Solutions</a></li>
+          <li><a href="#dermacare" id="nav-link-dermacare">Our Product</a></li>
+          <li><a href="#investor" id="nav-link-investor">Investors</a></li>
+          <li><a href="#contact" id="nav-link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-ctas">
+        <a href="https://dermacare-ai-inky.vercel.app/" class="btn btn-secondary" target="_blank"
+          rel="noopener noreferrer" id="nav-cta-launch">
+          Launch App
+        </a>
+      </div>
+
+      <button class="hamburger" aria-label="Toggle navigation drawer" aria-expanded="false" id="mobile-hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cinematic Corporate Hero Section -->
+    <section class="hero-section" id="hero">
+      <!-- Background Looping Video ONLY for Home Section -->
+      <div class="video-background-container" aria-hidden="true">
+        <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" class="bg-video" src="assets/15377744_1920_1080_24fps.mp4">
+          <source src="assets/15377744_1920_1080_24fps.mp4" type="video/mp4">
+          <source src="https://player.vimeo.com/external/403759944.sd.mp4?s=d0016e6d1eb7619894e6bf7df82ff7754ad45155&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+
+      <div class="hero-text reveal">
+        <div class="hero-tag">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span>AUTONOMOUS MULTI-AGENT SYSTEMS &amp; INFRASTRUCTURE</span>
+        </div>
+        <h1 class="hero-title">
+          Autonomous Multi-Agent AI Systems for Real-World Impact
+        </h1>
+        <p class="hero-description">
+          Arogix AI engineers high-performance multi-agent architectures, capital-efficient local GPU compute
+          infrastructure, and enterprise-grade software to unlock real operational outcomes.
+        </p>
+        <div class="hero-actions">
+          <a href="#build" class="btn btn-primary" id="hero-btn-explore">
+            Our Capabilities
+          </a>
+          <a href="#dermacare" class="btn btn-secondary" id="hero-btn-view-dc">
+            DermaCare Case Study
+          </a>
+          <a href="#contact" class="btn btn-tertiary" id="hero-btn-contact">
+            Book a Call &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. About Section -->
+    <section class="section" id="about">
+      <div class="about-section">
+        <div class="about-graphics reveal-left">
+          <div class="about-glow-box">
+            <img src="assets/gettyimages-2225582661-612x612.jpg" alt="Arogix AI Sovereign Infrastructure" class="about-image-premium">
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="section-tag">SOVEREIGN SYSTEMS</span>
+          <h2 class="section-title">We Put Custom AI Systems to Work</h2>
+          <p class="about-text">
+            Arogix AI is a next-generation AI engineering and software company focused on building autonomous
+            multi-agent networks, sovereign computing infrastructure, and clinical-grade intelligence platforms for
+            real-world impact.
+          </p>
+          <p class="about-text" style="font-size: 0.95rem;">
+            Founded with a mission to deliver measurable operational gains, we partner with visionary enterprise leaders
+            and healthcare groups to unlock the full economic potential of custom AI. We bypass expensive public API
+            drag, deploying secure, low-latency localized GPU inference nodes that respect client data sovereignty and
+            operate at extreme speeds.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num" id="stat-infra-reduction">85%</span>
+              <span class="stat-label">Inference Cost Saving</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" id="stat-latency">&lt;10s</span>
+              <span class="stat-label">SOAP note Generation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founders Section - EXTREMELY IMPORTANT -->
+    <section class="section" id="founders">
+      <div style="text-align: center; margin-bottom: 50px;" class="reveal">
+        <span class="section-tag">LEADERSHIP CORES</span>
+        <h2 class="section-title">The Founders</h2>
+        <p class="section-subtitle" style="margin: 0 auto 20px;">
+          Meet the engineers and visionaries driving the architecture and growth of Arogix AI.
+        </p>
+      </div>
+
+      <div class="founders-container">
+        <!-- Founder 1 -->
+        <div class="founder-card glass-panel reveal-left" id="founder-card-rubem">
+          <div class="founder-image-wrapper">
+            <img src="assets/rubem_didini.jpg" alt="Rubem Didini, Founder & CEO" class="founder-img">
+          </div>
+          <div class="founder-info">
+            <h3 class="founder-name">Rubem Didini</h3>
+            <span class="founder-role">Founder & CEO — Arogix AI</span>
+            <p class="founder-desc">
+              Vision-driven entrepreneur focused on building scalable AI innovation ecosystems, strategic partnerships,
+              and long-term business growth for next-generation AI technologies.
+            </p>
+            <span class="founder-focus-title">Focus Areas</span>
+            <div class="founder-focus-tags">
+              <span class="focus-tag">Company vision & strategy</span>
+              <span class="focus-tag">Business development</span>
+              <span class="focus-tag">AI innovation expansion</span>
+              <span class="focus-tag">Startup growth</span>
+              <span class="focus-tag">Strategic partnerships</span>
+              <span class="focus-tag">Global AI opportunities</span>
+            </div>
+            <div class="founder-socials">
+              <a href="https://linkedin.com/in/rubem-didini-7a67083" target="_blank" rel="noopener noreferrer"
+                class="social-link" aria-label="Rubem Didini LinkedIn">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              <a href="https://substack.com/@rubemdf" target="_blank" rel="noopener noreferrer" class="social-link"
+                aria-label="Rubem Didini Substack">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
+                </svg>
+              </a>
+              <a href="mailto:rdidini@gmail.com" class="social-link" aria-label="Email Rubem Didini">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </a>
+              <a href="tel:+18053318789" class="social-link" aria-label="Phone Rubem Didini">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Founder 2 -->
+        <div class="founder-card glass-panel reveal-right" id="founder-card-ragul">
+          <div class="founder-image-wrapper">
+            <img src="assets/ragulpriyan.jpg" alt="Ragulpriyan, Co-Founder & CTO" class="founder-img">
+          </div>
+          <div class="founder-info">
+            <h3 class="founder-name">Ragulpriyan</h3>
+            <span class="founder-role">Co-Founder & CTO — Arogix AI</span>
+            <p class="founder-desc">
+              AI Systems Developer and Computer Science Engineer focused on healthcare intelligence systems, scalable AI
+              infrastructure, and real-world AI applications. Leads the engineering behind DermaCare AI.
+            </p>
+            <span class="founder-focus-title">Focus Areas</span>
+            <div class="founder-focus-tags">
+              <span class="focus-tag">AI infrastructure</span>
+              <span class="focus-tag">Healthcare intelligence systems</span>
+              <span class="focus-tag">Inference architecture</span>
+              <span class="focus-tag">Scalable deployment systems</span>
+              <span class="focus-tag">Real-world AI applications</span>
+            </div>
+            <div class="founder-socials">
+              <a href="https://linkedin.com/in/ragulpriyan" target="_blank" rel="noopener noreferrer"
+                class="social-link" aria-label="Ragulpriyan LinkedIn">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              <a href="https://substack.com/@ragulpriyan" target="_blank" rel="noopener noreferrer" class="social-link"
+                aria-label="Ragulpriyan Substack">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
+                </svg>
+              </a>
+              <a href="https://ragulpriyan-portfolio.vercel.app" target="_blank" rel="noopener noreferrer"
+                class="social-link" aria-label="Ragulpriyan Portfolio Website">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </a>
+              <a href="tel:9345777651" class="social-link" aria-label="Phone Ragulpriyan">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </a>
+              <a href="mailto:arogixai@gmail.com" class="social-link" aria-label="Email Ragulpriyan">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="section" id="vision">
+      <div class="vision-mission-container">
+        <div class="vision-card glass-panel reveal-left">
+          <span class="section-tag">THE FUTURE</span>
+          <h2 class="section-title">Our Vision</h2>
+          <p class="vision-quote">
+            To build globally impactful AI systems capable of transforming healthcare, automation, and intelligent
+            decision-making for the next generation.
+          </p>
+        </div>
+
+        <div class="mission-section reveal">
+          <span class="section-tag">OUR CORE PURPOSE</span>
+          <h2 class="section-title">Our Mission</h2>
+          <p class="section-subtitle" style="margin-bottom: 24px;">
+            We engineer practical AI solutions with a focus on structural efficiency, absolute data privacy, and
+            clinical-grade accuracy.
+          </p>
+
+          <div class="mission-grid">
+            <div class="mission-card">
+              <div class="mission-icon" aria-hidden="true">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 class="mission-card-title">AI Accessibility</h3>
+              <p class="mission-card-description">Democratizing clinical companion tools so medical facilities worldwide
+                can access next-gen reasoning pipelines.</p>
+            </div>
+            <div class="mission-card">
+              <div class="mission-icon" aria-hidden="true">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 class="mission-card-title">Healthcare Intelligence</h3>
+              <p class="mission-card-description">Developing fine-tuned, clinically validated medical inference systems
+                built to assist real-world physicians.</p>
+            </div>
+            <div class="mission-card">
+              <div class="mission-icon" aria-hidden="true">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+              </div>
+              <h3 class="mission-card-title">Scalable AI Infrastructure</h3>
+              <p class="mission-card-description">Pioneering hybrid-cloud and local inference frameworks to remove
+                structural bottlenecks and expensive API loops.</p>
+            </div>
+            <div class="mission-card">
+              <div class="mission-icon" aria-hidden="true">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h3 class="mission-card-title">Ethical AI Systems</h3>
+              <p class="mission-card-description">Guaranteeing absolute compliance with global healthcare privacy acts
+                (HIPAA) via isolated data structures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Section (What We Build) -->
+    <section class="section" id="build">
+      <div style="text-align: center; margin-bottom: 50px;" class="reveal">
+        <span class="section-tag">ENGINEERING CAPABILITIES</span>
+        <h2 class="section-title">What We Build</h2>
+        <p class="section-subtitle" style="margin: 0 auto 20px;">
+          Sovereign IT systems and capital-efficient architectures engineered to deliver real-world economic gains and
+          maximum execution speed.
+        </p>
+      </div>
+
+      <div class="build-grid">
+        <!-- Card 1 -->
+        <div class="build-card glass-panel reveal" id="build-card-1">
+          <div class="build-card-icon" aria-hidden="true">&#x26e9;</div>
+          <h3 class="build-card-title">Autonomous Multi-Agent AI</h3>
+          <p class="build-card-description">
+            High-performance frameworks orchestrating multiple specialized AI agents that collaborate autonomously to
+            automate scheduling, analysis, and clinical pipelines.
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div class="build-card glass-panel reveal" id="build-card-2" style="transition-delay: 0.05s;">
+          <div class="build-card-icon" aria-hidden="true">&#x1f5a5;</div>
+          <h3 class="build-card-title">Sovereign GPU Compute</h3>
+          <p class="build-card-description">
+            Custom physical and hybrid local GPU setups running specialized, fine-tuned open-source models, bypassing
+            public APIs to secure 85% cost savings.
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div class="build-card glass-panel reveal" id="build-card-3" style="transition-delay: 0.1s;">
+          <div class="build-card-icon" aria-hidden="true">&#x1f5c3;</div>
+          <h3 class="build-card-title">Enterprise AI Consulting</h3>
+          <p class="build-card-description">
+            Strategic AI capability discovery, custom training, on-premise pipeline design, and outcome-based value
+            integration for global corporate operations.
+          </p>
+        </div>
+        <!-- Card 4 -->
+        <div class="build-card glass-panel reveal" id="build-card-4">
+          <div class="build-card-icon" aria-hidden="true">&#x271a;</div>
+          <h3 class="build-card-title">Clinical Intelligence Systems</h3>
+          <p class="build-card-description">
+            Medical-grade companion companion engines automating clinical documentation, SOAP summaries, and visual
+            indicators with clinical-grade validation.
+          </p>
+        </div>
+        <!-- Card 5 -->
+        <div class="build-card glass-panel reveal" id="build-card-5" style="transition-delay: 0.05s;">
+          <div class="build-card-icon" aria-hidden="true">&#x2601;</div>
+          <h3 class="build-card-title">Hybrid Cloud Architectures</h3>
+          <p class="build-card-description">
+            Latency-optimized secure routing networks coordinating secure localized processing networks with scalable
+            cloud backups for maximum performance.
+          </p>
+        </div>
+        <!-- Card 6 -->
+        <div class="build-card glass-panel reveal" id="build-card-6" style="transition-delay: 0.1s;">
+          <div class="build-card-icon" aria-hidden="true">&#x2699;</div>
+          <h3 class="build-card-title">Sovereign Data Storage</h3>
+          <p class="build-card-description">
+            High-security, air-gapped localized data management platforms completely aligned with HIPAA guidelines,
+            eliminating patient privacy leakage.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DermaCare AI Flagship Showcase -->
+    <section class="section" id="dermacare">
+      <div class="showcase-container">
+        <div class="showcase-info reveal-left">
+          <span class="section-tag">FLAGSHIP CLINICAL SUITE</span>
+          <h2 class="section-title">DermaCare AI Showcase</h2>
+          <p class="about-text" style="margin-bottom: 20px;">
+            DermaCare AI is a specialized clinical automation suite developed by Arogix AI to demonstrate our medical
+            reasoning models and localized inference grids. It streamlines documentation and assists visual lesion
+            diagnostic workflows.
+          </p>
+
+          <div class="showcase-feature-list">
+            <div class="showcase-feature-item">
+              <div class="showcase-feature-bullet" aria-hidden="true">&bull;</div>
+              <div class="showcase-feature-text">
+                <b>SOAP Record Synthesis</b>
+                <p>Generates detailed clinical SOAP notes from brief audio inputs or physician logs in under 10 seconds.
+                </p>
+              </div>
+            </div>
+            <div class="showcase-feature-item">
+              <div class="showcase-feature-bullet" aria-hidden="true">&bull;</div>
+              <div class="showcase-feature-text">
+                <b>AI-Powered Image Analysis</b>
+                <p>Applies localized pixel computer vision models to map asymmetry, borders, and color variations in
+                  skin lesions.</p>
+              </div>
+            </div>
+            <div class="showcase-feature-item">
+              <div class="showcase-feature-bullet" aria-hidden="true">&bull;</div>
+              <div class="showcase-feature-text">
+                <b>Clinical Reasoning Engine</b>
+                <p>Cross-references patient observations with dynamic clinical paths to list structured differential
+                  diagnoses.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-ctas">
+            <a href="https://dermacare-ai-inky.vercel.app/" class="btn btn-primary" target="_blank"
+              rel="noopener noreferrer" id="showcase-btn-live-app">
+              Launch Live Application
+            </a>
+            <a href="https://v0-dermacareai.vercel.app/" class="btn btn-secondary" target="_blank"
+              rel="noopener noreferrer" id="showcase-btn-demo">
+              View Marketing Demo
+            </a>
+            <a href="#pitchdeck" class="btn btn-tertiary" id="showcase-btn-download-deck">
+              Get Investor Deck &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div class="showcase-visual reveal-right">
+          <!-- Elegant Corporate Dashboard Mockup -->
+          <div class="dashboard-mockup-product">
+            <div class="dashboard-nav" role="tablist">
+              <button class="dashboard-tab active" role="tab" aria-selected="true" aria-controls="soap-pane"
+                id="tab-soap" data-tab="soap-pane">SOAP Synthesis</button>
+              <button class="dashboard-tab" role="tab" aria-selected="false" aria-controls="lesion-pane" id="tab-lesion"
+                data-tab="lesion-pane">Visual Analysis</button>
+              <button class="dashboard-tab" role="tab" aria-selected="false" aria-controls="reasoning-pane"
+                id="tab-reasoning" data-tab="reasoning-pane">Differential Tree</button>
+            </div>
+
+            <div class="dashboard-content-area">
+              <!-- SOAP Pane -->
+              <div class="tab-pane active" id="soap-pane" role="tabpanel" aria-labelledby="tab-soap">
+                <div class="soap-mock">
+                  <div class="analysis-indicator">
+                    <span class="analysis-pulse" aria-hidden="true"></span>
+                    <span
+                      style="font-size: 0.75rem; font-family: monospace; color: hsl(var(--text-muted)); font-weight: 500;">LOCAL
+                      CLINICAL PIPELINE ACTIVE (PHI-3)</span>
+                  </div>
+                  <div class="soap-text-output" id="soap-typewriter">Awaiting system trigger...</div>
+                </div>
+              </div>
+
+              <!-- Lesion Pane -->
+              <div class="tab-pane" id="lesion-pane" role="tabpanel" aria-labelledby="tab-lesion">
+                <div class="image-analysis-mock">
+                  <div class="skin-image-container">
+                    <!-- Clean, motionless vector representation -->
+                    <svg width="80" height="80" viewBox="0 0 100 100" style="opacity: 0.95;">
+                      <rect x="10" y="10" width="80" height="80" fill="none" stroke="rgba(255,255,255,0.08)"
+                        stroke-width="1" />
+                      <circle cx="50" cy="50" r="28" fill="#150e0d" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                      <path d="M 38 48 Q 42 38 58 42 T 68 58 T 42 62 Z" fill="#291811" />
+                      <line x1="10" y1="50" x2="90" y2="50" stroke="rgba(0, 240, 255, 0.15)" stroke-width="1" />
+                      <circle cx="50" cy="50" r="30" fill="none" stroke="rgba(0, 240, 255, 0.25)" stroke-width="1"
+                        stroke-dasharray="2 2" />
+                    </svg>
+                  </div>
+                  <div class="lesion-attributes">
+                    <div class="attr-row">
+                      <span class="label">Suspect Class</span>
+                      <span class="value" style="color: #f87171;">Atypical Lesion</span>
+                    </div>
+                    <div class="attr-row">
+                      <span class="label">Asymmetry Score</span>
+                      <span class="value">Atypical (82%)</span>
+                    </div>
+                    <div class="attr-row">
+                      <span class="label">Borders Scallop</span>
+                      <span class="value">Poorly demarcated (74%)</span>
+                    </div>
+                    <div class="attr-row">
+                      <span class="label">Color Variance</span>
+                      <span class="value">Variegated (68%)</span>
+                    </div>
+                    <div class="attr-row">
+                      <span class="label">Clinical Recommendation</span>
+                      <span class="value" style="color: hsl(var(--accent-cyan));">Expedited Biopsy</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reasoning Pane -->
+              <div class="tab-pane" id="reasoning-pane" role="tabpanel" aria-labelledby="tab-reasoning">
+                <div class="soap-mock">
+                  <div class="analysis-indicator">
+                    <span class="analysis-pulse" style="background: hsl(var(--accent-purple));"
+                      aria-hidden="true"></span>
+                    <span
+                      style="font-size: 0.75rem; font-family: monospace; color: hsl(var(--text-muted)); font-weight: 500;">CLINICAL
+                      REASONING PATHS ANALYSIS</span>
+                  </div>
+                  <div class="lesion-attributes" style="gap: 6px;">
+                    <div class="attr-row"
+                      style="background: rgba(255, 255, 255, 0.01); padding: 6px 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.03);">
+                      <span class="value" style="color: #f87171;">1. Melanoma in-situ suspect</span>
+                      <span class="value">Conf: 84.6%</span>
+                    </div>
+                    <div class="attr-row" style="padding: 4px 10px;">
+                      <span class="value">2. Highly Dysplastic Nevus</span>
+                      <span class="value">Conf: 12.3%</span>
+                    </div>
+                    <div class="attr-row" style="padding: 4px 10px;">
+                      <span class="value">3. Pigmented Seborrheic Keratosis</span>
+                      <span class="value">Conf: 3.1%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="section" id="tech">
+      <div style="text-align: center; margin-bottom: 50px;" class="reveal">
+        <span class="section-tag">ENGINEERING STACK</span>
+        <h2 class="section-title">Technology Stack</h2>
+        <p class="section-subtitle" style="margin: 0 auto 20px;">
+          Arogix platforms are built on robust, cutting-edge software paradigms and modern computing systems.
+        </p>
+      </div>
+
+      <div class="tech-grid">
+        <!-- Card 1 -->
+        <div class="tech-card glass-panel reveal">
+          <div class="tech-icon-container" aria-hidden="true">&#x26c1;</div>
+          <h3 class="tech-name">FastAPI</h3>
+          <span class="tech-category">Backend Routing</span>
+        </div>
+        <!-- Card 2 -->
+        <div class="tech-card glass-panel reveal" style="transition-delay: 0.02s;">
+          <div class="tech-icon-container" aria-hidden="true">&#x26e9;</div>
+          <h3 class="tech-name">Ollama</h3>
+          <span class="tech-category">Inference Routing</span>
+        </div>
+        <!-- Card 3 -->
+        <div class="tech-card glass-panel reveal" style="transition-delay: 0.04s;">
+          <div class="tech-icon-container" aria-hidden="true">&#x2741;</div>
+          <h3 class="tech-name">Phi-3 / Llama 3</h3>
+          <span class="tech-category">AI Language Weights</span>
+        </div>
+        <!-- Card 4 -->
+        <div class="tech-card glass-panel reveal" style="transition-delay: 0.06s;">
+          <div class="tech-icon-container" aria-hidden="true">&#x25b2;</div>
+          <h3 class="tech-name">Vercel</h3>
+          <span class="tech-category">Edge Infrastructure</span>
+        </div>
+        <!-- Card 5 -->
+        <div class="tech-card glass-panel reveal" style="transition-delay: 0.08s;">
+          <div class="tech-icon-container" aria-hidden="true">&#x2601;</div>
+          <h3 class="tech-name">Cloudflare</h3>
+          <span class="tech-category">Edge Gateway</span>
+        </div>
+        <!-- Card 6 -->
+        <div class="tech-card glass-panel reveal" style="transition-delay: 0.1s;">
+          <div class="tech-icon-container" aria-hidden="true">&#x1f40d;</div>
+          <h3 class="tech-name">Python</h3>
+          <span class="tech-category">Core Processing</span>
+        </div>
+        <!-- Tech Card 7 -->
+        <div class="tech-card glass-panel reveal" style="transition-delay: 0.12s;">
+          <div class="tech-icon-container" aria-hidden="true">&#x1f5a5;</div>
+          <h3 class="tech-name">Local GPU</h3>
+          <span class="tech-category">Inference Compute</span>
+        </div>
+        <!-- Tech Card 8 -->
+        <div class="tech-card glass-panel reveal" style="transition-delay: 0.14s;">
+          <div class="tech-icon-container" aria-hidden="true">&#x1f5c3;</div>
+          <h3 class="tech-name">AI APIs</h3>
+          <span class="tech-category">Hybrid Orchestration</span>
+        </div>
+        <!-- Tech Card 9 -->
+        <div class="tech-card glass-panel reveal" style="transition-delay: 0.16s;">
+          <div class="tech-icon-container" aria-hidden="true">&#x262f;</div>
+          <h3 class="tech-name">Hybrid Cloud</h3>
+          <span class="tech-category">Scale Infrastructure</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Arogix AI / Investor Section -->
+    <section class="section" id="investor">
+      <div class="investor-section glass-panel reveal">
+        <div style="max-width: 600px;">
+          <span class="section-tag">INVESTOR DASHBOARD</span>
+          <h2 class="section-title" style="margin-bottom: 12px;">Sovereign AI Market Potential</h2>
+          <p class="about-text" style="font-size: 1rem;">
+            We solve the major pain points of enterprise AI integration: escalating token expenditures, critical patient
+            data exposures, and high diagnostic inaccuracies.
+          </p>
+        </div>
+
+        <div class="investor-dashboard">
+          <div class="investor-metrics">
+            <div class="metric-box glass-panel">
+              <span class="metric-value" style="color: hsl(var(--accent-cyan));">85%</span>
+              <h3 class="metric-heading">Operating Cost Savings</h3>
+              <p class="metric-desc">Bypassing expensive public APIs by hosting specialized localized models on custom
+                GPU nodes.</p>
+            </div>
+            <div class="metric-box glass-panel">
+              <span class="metric-value" style="color: hsl(var(--accent-purple));">100%</span>
+              <h3 class="metric-heading">Data Sovereignty</h3>
+              <p class="metric-desc">Strict, air-gapped local database execution completely in line with HIPAA
+                standards.</p>
+            </div>
+            <div class="metric-box glass-panel">
+              <span class="metric-value" style="color: hsl(var(--accent-cyan));">$187B</span>
+              <h3 class="metric-heading">Total Addressable Market</h3>
+              <p class="metric-desc">Addressing the massive, underserved global healthcare AI and clinical companion
+                market.</p>
+            </div>
+            <div class="metric-box glass-panel">
+              <span class="metric-value" style="color: hsl(var(--accent-purple));">Active</span>
+              <h3 class="metric-heading">Deployed MVP Traction</h3>
+              <p class="metric-desc">DermaCare AI MVP is fully active, validating inference workflows in real-world
+                scenarios.</p>
+            </div>
+          </div>
+
+          <div class="investor-details">
+            <div class="detail-point">
+              <div class="detail-icon" aria-hidden="true">&#x2713;</div>
+              <div class="detail-txt">
+                <h4>Low-Cost Scalable Architecture</h4>
+                <p>We deploy standard local GPU grids combined with fast, serverless cloud routing, maximizing
+                  structural capital efficiency.</p>
+              </div>
+            </div>
+            <div class="detail-point">
+              <div class="detail-icon" aria-hidden="true">&#x2713;</div>
+              <div class="detail-txt">
+                <h4>Founder-Led Rapid Engineering</h4>
+                <p>Built directly by a highly synchronized team of computer science engineers and business visionaries,
+                  bypassing typical startup overhead.</p>
+              </div>
+            </div>
+            <div class="detail-point">
+              <div class="detail-icon" aria-hidden="true">&#x2713;</div>
+              <div class="detail-txt">
+                <h4>Scalable B2B SaaS Expansion</h4>
+                <p>Targeting clinics, private practitioners, and hospitals via streamlined modular licensing structures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Future Roadmap Section -->
+    <section class="section" id="roadmap">
+      <div style="text-align: center; margin-bottom: 50px;" class="reveal">
+        <span class="section-tag">BLUEPRINT & MILESTONES</span>
+        <h2 class="section-title">Future Roadmap</h2>
+        <p class="section-subtitle" style="margin: 0 auto 20px;">
+          Our chronological development phases for scaling healthcare intelligence ecosystems globally.
+        </p>
+      </div>
+
+      <div class="roadmap-timeline">
+        <!-- Step 1 -->
+        <div class="roadmap-node reveal">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="roadmap-content-box glass-panel">
+            <span class="roadmap-step">Phase 1</span>
+            <h3 class="roadmap-title">AI Healthcare Expansion</h3>
+            <p class="roadmap-desc">Deepening primary visual indicators in skin pathology datasets to support diverse
+              demographic dermatological evaluations.</p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="roadmap-node reveal">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="roadmap-content-box glass-panel">
+            <span class="roadmap-step">Phase 2</span>
+            <h3 class="roadmap-title">Multi-Model AI Systems</h3>
+            <p class="roadmap-desc">Integrating multimodal neural routing layers capable of simultaneously evaluating
+              images, laboratory reports, and voice records.</p>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="roadmap-node reveal">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="roadmap-content-box glass-panel">
+            <span class="roadmap-step">Phase 3</span>
+            <h3 class="roadmap-title">Enterprise Clinical AI</h3>
+            <p class="roadmap-desc">Fine-tuning secure localized small language model (SLM) pipelines to adapt directly
+              to proprietary hospital network records.</p>
+          </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="roadmap-node reveal">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="roadmap-content-box glass-panel">
+            <span class="roadmap-step">Phase 4</span>
+            <h3 class="roadmap-title">Hospital Integrations</h3>
+            <p class="roadmap-desc">Direct compliance linkages and EHR plug integration frameworks for rapid hospital
+              practitioner onboarding.</p>
+          </div>
+        </div>
+        <!-- Step 5 -->
+        <div class="roadmap-node reveal">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="roadmap-content-box glass-panel">
+            <span class="roadmap-step">Phase 5</span>
+            <h3 class="roadmap-title">AI SaaS Ecosystem</h3>
+            <p class="roadmap-desc">Establishing robust cloud-hosted APIs allowing medical startups to construct
+              solutions on top of Arogix's inference engine.</p>
+          </div>
+        </div>
+        <!-- Step 6 -->
+        <div class="roadmap-node reveal">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="roadmap-content-box glass-panel">
+            <span class="roadmap-step">Phase 6</span>
+            <h3 class="roadmap-title">Scalable GPU Infrastructure</h3>
+            <p class="roadmap-desc">Scaling dedicated, low-cost localized GPU racks globally to completely eliminate
+              server bottlenecks and commercial APIs dependency.</p>
+          </div>
+        </div>
+        <!-- Step 7 -->
+        <div class="roadmap-node reveal">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="roadmap-content-box glass-panel">
+            <span class="roadmap-step">Phase 7</span>
+            <h3 class="roadmap-title">Global AI Deployment</h3>
+            <p class="roadmap-desc">Deploying localized medical companion platforms internationally in compliance with
+              cross-border safety standards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pitch Deck Slide Preview Section -->
+    <section class="section" id="pitchdeck">
+      <div class="pitchdeck-container">
+        <div class="pitchdeck-card glass-panel reveal-left">
+          <div class="pitchdeck-preview-slides">
+            <div class="slide-preview-track" id="slide-preview-track">
+              <!-- Slide 1 -->
+              <div class="preview-slide active">
+                <span class="preview-slide-label">SLIDE 01 / 08</span>
+                <h3 class="preview-slide-title">DermaCare AI Investor Deck</h3>
+                <p class="preview-slide-body">Explore the vision, architecture, healthcare AI strategy, and future
+                  roadmap behind DermaCare AI.</p>
+              </div>
+              <!-- Slide 2 -->
+              <div class="preview-slide">
+                <span class="preview-slide-label">SLIDE 02 / 08</span>
+                <h3 class="preview-slide-title">The Market Problem</h3>
+                <p class="preview-slide-body">Extreme documentation overhead consumes 40% of doctors' time, combined
+                  with severe global specialist shortages.</p>
+              </div>
+              <!-- Slide 3 -->
+              <div class="preview-slide">
+                <span class="preview-slide-label">SLIDE 04 / 08</span>
+                <h3 class="preview-slide-title">Technical Architecture</h3>
+                <p class="preview-slide-body">Localized GPU grids running optimized SLMs (Phi-3) achieve 85% reduction
+                  in commercial API costs.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-indicators" id="slide-indicators">
+            <span class="slide-dot active" data-slide="0" aria-label="Go to slide 1"></span>
+            <span class="slide-dot" data-slide="1" aria-label="Go to slide 2"></span>
+            <span class="slide-dot" data-slide="2" aria-label="Go to slide 3"></span>
+          </div>
+        </div>
+
+        <div class="pitchdeck-info reveal">
+          <span class="section-tag">INVESTOR MATERIALS</span>
+          <h2 class="section-title">DermaCare AI Investor Deck</h2>
+          <p class="about-text" style="margin-bottom: 20px;">
+            Arogix AI is opening its seed-round partnerships to qualified accelerators, institutions, and healthcare
+            technology investors. Review our comprehensive platform architectures and SaaS financial frameworks.
+          </p>
+          <div class="showcase-ctas" style="gap: 12px;">
+            <button class="btn btn-primary" id="open-deck-modal">
+              Open Fullscreen Presentation
+            </button>
+            <a href="assets/dermacare_ai_pitchdeck.pdf" download="DermaCare_AI_Investor_Deck.pdf"
+              class="btn btn-secondary" id="download-deck-btn">
+              Download PDF Deck
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Immersive Presentation Theater Modal -->
+    <div class="deck-modal" id="deck-modal" role="dialog" aria-modal="true" aria-labelledby="modal-deck-title">
+      <div class="modal-container">
+        <button class="modal-close-btn" id="close-deck-modal" aria-label="Close Presentation">&times;</button>
+
+        <button class="deck-nav-btn deck-nav-prev" aria-label="Previous Slide">&larr;</button>
+        <button class="deck-nav-btn deck-nav-next" aria-label="Next Slide">&rarr;</button>
+
+        <div class="modal-deck-slider" id="modal-deck-slider">
+
+          <!-- Slide 1: Cover -->
+          <div class="modal-slide active">
+            <span class="slide-index-counter">Slide 1 of 8</span>
+            <span class="modal-slide-tag">Executive Summary</span>
+            <h3 class="modal-slide-title" id="modal-deck-title">DermaCare AI Investor Deck</h3>
+            <div class="modal-slide-content">
+              <p style="font-size: 1.15rem; color: white;">Building AI Systems for Real-World Healthcare Impact.</p>
+              <p style="margin-top: 12px;">Prepared by Rubem Didini (CEO) & Ragulpriyan (CTO). Arogix AI is accelerating
+                healthcare workflows via robust localized inference GPU platforms.</p>
+            </div>
+          </div>
+
+          <!-- Slide 2: The Problem -->
+          <div class="modal-slide">
+            <span class="slide-index-counter">Slide 2 of 8</span>
+            <span class="modal-slide-tag">Market Context</span>
+            <h3 class="modal-slide-title">The Dermatology Constraints</h3>
+            <div class="modal-slide-content">
+              <p>Dermatology practices worldwide face massive structural bottlenecks:</p>
+              <ul>
+                <li><b>Extreme Documentation Overhead:</b> Practitioners consume 30% to 40% of their day writing SOAP
+                  notes and charts.</li>
+                <li><b>Global Specialist Shortage:</b> Patient appointment wait times exceed 3 to 6 months for simple
+                  evaluations.</li>
+                <li><b>Rising Care Costs:</b> Delayed diagnoses prevent early stage primary interventions, multiplying
+                  ultimate treatment costs.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Slide 3: The Product -->
+          <div class="modal-slide">
+            <span class="slide-index-counter">Slide 3 of 8</span>
+            <span class="modal-slide-tag">Flagship Solution</span>
+            <h3 class="modal-slide-title">Introducing DermaCare AI</h3>
+            <div class="modal-slide-content">
+              <p>A comprehensive clinical companion that integrates directly into the clinician's daily flow:</p>
+              <ul>
+                <li><b>Automated SOAP synthesis</b>: Generates standard structured records from transcript audio in
+                  under 10 seconds.</li>
+                <li><b>Visual Path Indicators</b>: Runs edge computer vision filters mapping lesion borders and color
+                  variations.</li>
+                <li><b>Reasoning Tree Support</b>: Cross-references clinical symptoms to outline structured differential
+                  diagnoses.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Slide 4: Technology -->
+          <div class="modal-slide">
+            <span class="slide-index-counter">Slide 4 of 8</span>
+            <span class="modal-slide-tag">Inference Architecture</span>
+            <h3 class="modal-slide-title">Capital-Efficient Tech Stack</h3>
+            <div class="modal-slide-content">
+              <p>We solve the massive cost structures of traditional cloud-based LLM architectures:</p>
+              <ul>
+                <li><b>Sovereign Compute</b>: Running fine-tuned specialized open source LLMs (Phi-3) on secure local
+                  GPU grids.</li>
+                <li><b>Local Routing (Ollama + FastAPI)</b>: Eliminates commercial API dependency, securing 85%
+                  operational savings.</li>
+                <li><b>Absolute HIPAA compliance</b>: Patient medical data is isolated locally, completely bypassing
+                  commercial cloud sharing.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Slide 5: Market Opportunity -->
+          <div class="modal-slide">
+            <span class="slide-index-counter">Slide 5 of 8</span>
+            <span class="modal-slide-tag">Addressable Market</span>
+            <h3 class="modal-slide-title">$187B Global Medical AI Market</h3>
+            <div class="modal-slide-content">
+              <p>Dermatological diagnostics represents one of the highest-growth verticals inside healthcare technology:
+              </p>
+              <ul>
+                <li>Clinical decision support tools are scaling rapidly in response to physician shortages.</li>
+                <li>Private clinics and mid-sized practices are actively looking for software to reclaim lost charting
+                  hours.</li>
+                <li>High capital scalability due to low-cost infrastructure nodes.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Slide 6: Business Scaling -->
+          <div class="modal-slide">
+            <span class="slide-index-counter">Slide 6 of 8</span>
+            <span class="modal-slide-tag">SaaS Strategy</span>
+            <h3 class="modal-slide-title">B2B SaaS Business Model</h3>
+            <div class="modal-slide-content">
+              <p>Simple licensing models designed for exponential practitioner acquisition:</p>
+              <ul>
+                <li><b>Clinic Plan</b>: $149/month per doctor seat. Automated SOAP + lesion indicator tools.</li>
+                <li><b>Enterprise Platform</b>: Custom site licensing incorporating secure dedicated on-premise GPU
+                  clusters and EHR API integrations.</li>
+                <li><b>Scale Advantage</b>: Bypassing expensive token APIs enables massive gross margins exceeding 90%.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Slide 7: Leadership -->
+          <div class="modal-slide">
+            <span class="slide-index-counter">Slide 7 of 8</span>
+            <span class="modal-slide-tag">Leadership Core</span>
+            <h3 class="modal-slide-title">Founder-Led Engineering</h3>
+            <div class="modal-slide-content">
+              <p>Arogix AI is founded and operated by engineering-first technology leaders:</p>
+              <ul>
+                <li><b>Rubem Didini (CEO):</b> Leads growth pipelines, strategic healthcare enterprise relationships,
+                  and long-term scaling strategy.</li>
+                <li><b>Ragulpriyan (CTO):</b> Computer science engineer. Architect behind DermaCare AI. Directs local
+                  model tuning, inference routing, and local GPU systems.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Slide 8: Summary Call to Action -->
+          <div class="modal-slide">
+            <span class="slide-index-counter">Slide 8 of 8</span>
+            <span class="modal-slide-tag">Contact & Inquiries</span>
+            <h3 class="modal-slide-title">Partner with Arogix AI</h3>
+            <div class="modal-slide-content">
+              <p>We are initiating pilot integrations with private healthcare practices and opening strategic seed
+                investments.</p>
+              <p style="margin-top: 12px;">Contact our executive offices at:</p>
+              <p style="font-size: 1.15rem; color: hsl(var(--accent-cyan)); font-weight: 600; margin-top: 8px;">
+                arogixai@gmail.com</p>
+              <p style="margin-top: 16px; font-size: 0.8rem; color: rgba(255,255,255,0.2);">© 2026 Arogix AI. All rights
+                reserved.</p>
+            </div>
+          </div>
+
+          <div class="modal-progress-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact & Partnership Inquiries -->
+    <section class="section" id="contact">
+      <div class="contact-container">
+        <div class="contact-info reveal-left">
+          <span class="section-tag">SECURE CORRESPONDENCE</span>
+          <h2 class="section-title">Partner with Arogix AI</h2>
+          <p class="about-text" style="margin-bottom: 20px;">
+            Whether you are a clinic manager seeking to integrate DermaCare AI, a technology enthusiast wanting to
+            collaborate, or an investor exploring our seed round, we welcome your inquiry.
+          </p>
+
+          <div class="contact-meta">
+            <div class="contact-meta-item">
+              <div class="contact-meta-icon" aria-hidden="true">&#x2709;</div>
+              <div class="contact-meta-details">
+                <span>Secure Corporate Mail</span>
+                <a href="mailto:arogixai@gmail.com">arogixai@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-meta-item">
+              <div class="contact-meta-icon" aria-hidden="true">&#x1f5fa;</div>
+              <div class="contact-meta-details">
+                <span>Enterprise Locations</span>
+                <p>Silicon Valley Ecosystems &amp; Global Networks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container reveal-right">
+          <form class="contact-form" id="arogix-contact-form" novalidate>
+            <div class="form-success-msg" id="form-success-alert" role="alert">
+              INQUIRY TRANSMITTED SUCCESSFULLY. Our executive office will contact you.
+            </div>
+
+            <div class="form-group">
+              <label for="contact-name">Full Name / Corporate Entity</label>
+              <input type="text" id="contact-name" name="from_name" class="form-input" placeholder="e.g. Dr. Jane Doe / Stanford Clinic"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Corporate Email Address</label>
+              <input type="email" id="contact-email" name="from_email" class="form-input" placeholder="e.g. clinician@hospital.org"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Contact Number / Direct Line</label>
+              <input type="tel" id="contact-phone" name="contact_phone" class="form-input" placeholder="e.g. +1 (555) 019-2834"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Inquiry Classification</label>
+              <input type="text" id="contact-subject" name="subject" class="form-input"
+                placeholder="e.g. Seed Investment / Clinical Trial" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Inquiry Framework Description</label>
+              <textarea id="contact-message" name="message" class="form-input"
+                placeholder="Outline your objectives, practice volume, or investment focus..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn" id="contact-form-submit-btn">
+              Transmit Corporate Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Clean Corporate Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand-column">
+        <a href="#hero" class="footer-brand-logo" id="footer-logo-link">
+          <img src="assets/logo.png" alt="Arogix AI Logo" class="footer-logo-img">
+        </a>
+        <p class="footer-brand-desc">
+          Building high-performance, clinical-grade intelligent systems and capital-efficient GPU infrastructures for
+          real-world impact.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-column-title">Company Map</h3>
+        <ul class="footer-links">
+          <li><a href="#about" id="footer-link-about">About Us</a></li>
+          <li><a href="#founders" id="footer-link-founders">Our Founders</a></li>
+          <li><a href="#vision" id="footer-link-vision">Vision &amp; Mission</a></li>
+          <li><a href="#roadmap" id="footer-link-roadmap">Future Roadmap</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-column-title">Flagships</h3>
+        <ul class="footer-links">
+          <li><a href="https://dermacare-ai-inky.vercel.app/" target="_blank" rel="noopener noreferrer"
+              id="footer-link-app">DermaCare AI App</a></li>
+          <li><a href="https://v0-dermacareai.vercel.app/" target="_blank" rel="noopener noreferrer"
+              id="footer-link-demo">Marketing Demo</a></li>
+          <li><a href="#tech" id="footer-link-tech">Technology Stack</a></li>
+          <li><a href="#pitchdeck" id="footer-link-deck">Investor Materials</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter-col">
+        <h3 class="footer-column-title">Technical Updates</h3>
+        <div class="footer-newsletter">
+          <p>Subscribe to Arogix AI clinical framework expansions and infrastructure whitepapers.</p>
+          <form class="newsletter-form" id="newsletter-form"
+            onsubmit="event.preventDefault(); alert('Subscribed to Arogix technical updates.'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="researcher@health.edu"
+              aria-label="Newsletter Email Input" required>
+            <button type="submit" class="btn newsletter-btn" id="newsletter-btn-subscribe">
+              Join
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 AROGIX AI. Sovereign clinical engineering pipelines. All rights reserved.</p>
+      <div class="footer-powered">
+        <span>Powered by</span>
+        <span class="glow-a">Arogix Systems</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
