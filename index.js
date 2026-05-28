@@ -572,16 +572,14 @@ function initBackgroundVideo() {
   bgVideo.setAttribute('muted', '');
   bgVideo.setAttribute('playsinline', '');
 
-  // Detect environment to choose the correct video source
-  const isLocal = window.location.hostname === 'localhost' || 
-                  window.location.hostname === '127.0.0.1' || 
-                  window.location.protocol === 'file:';
-                  
-  const localSrc = 'assets/15377744_1920_1080_24fps.mp4';
-  const cdnSrc = 'https://assets.mixkit.co/videos/preview/mixkit-futuristic-technology-digital-grid-loop-41852-large.mp4';
+  // Detect WebM support to select the most optimal local source
+  const supportsWebm = bgVideo.canPlayType('video/webm; codecs="vp9, vorbis"') !== '' || 
+                       bgVideo.canPlayType('video/webm; codecs="vp8, vorbis"') !== '';
+  
+  const videoSrc = supportsWebm ? 'assets/tech_loop.webm' : 'assets/tech_loop.mp4';
   
   // Explicitly assign the correct src attribute to prevent browser 404 halt glitches on nested sources
-  bgVideo.src = isLocal ? localSrc : cdnSrc;
+  bgVideo.src = videoSrc;
 
   // Force loading and initial play
   bgVideo.load();
@@ -589,7 +587,7 @@ function initBackgroundVideo() {
   
   if (playPromise !== undefined) {
     playPromise.then(() => {
-      console.log("BACKGROUND VIDEO PLAYING SUCCESS (" + (isLocal ? "LOCAL" : "CDN") + ")");
+      console.log("BACKGROUND VIDEO PLAYING SUCCESS (" + (supportsWebm ? "WEBM" : "MP4") + ")");
     }).catch((err) => {
       console.warn("BACKGROUND VIDEO PLAY INITIAL BLOCK:", err);
       // Fallback: Trigger play on the first user action on the page

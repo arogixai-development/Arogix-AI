@@ -1,5 +1,5 @@
 # Ignore large video files exceeding GitHub's 100MB limit
-assets/*.mp4
+assets/15377744_1920_1080_24fps.mp4
 
 # OS/System files
 .DS_Store
