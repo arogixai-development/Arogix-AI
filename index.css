@@ -240,6 +240,7 @@ h6 {
   letter-spacing: 0.15em;
   background: linear-gradient(90deg, hsl(var(--accent-cyan)), hsl(var(--accent-blue)));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
   display: inline-block;
@@ -250,6 +251,7 @@ h6 {
   margin-bottom: 20px;
   background: linear-gradient(180deg, #ffffff 40%, rgba(255, 255, 255, 0.7) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -489,6 +491,7 @@ header.scrolled {
   margin-bottom: 20px;
   background: linear-gradient(180deg, #ffffff 40%, rgba(255, 255, 255, 0.7) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
